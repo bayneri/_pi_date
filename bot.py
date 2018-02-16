@@ -3,8 +3,8 @@ import pi
 import tweepy
 
 
-todays_date = datetime.datetime.now().strftime('%m.%d.%y')
-today_str = datetime.datetime.now().strftime('%m%d%y')
+todays_date = datetime.datetime.now().strftime('%y-%m-%d')
+today_str = datetime.datetime.now().strftime('%y%m%d')
 
 index = pi.str.index(today_str)
 before = pi.str[index-8:index]
